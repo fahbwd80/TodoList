@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do List</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1>Today is <%=myDay %>!</h1>
+    <h1>It's weekday!</h1>
+    <h2>Get up and code</h2>
+    <ul>
+        <li>Breakfast</li>
+        <li>Take a bath</li>
+        <li>Drive to supermarket</li>
+        <li>Buy groceries</li>
+        <% for(let i = 0; i<addedItem.length; i++){%>
+        <li><%=addedItem [i] %></li>
+    <%}%>
+    </ul>
+    <form method="post">
+        <input type="text" name="addItem" placeholder="Add to do list">
+        <button type="submit" name="button">Add to do list</button>
+    </form>
+</body>
+</html>
